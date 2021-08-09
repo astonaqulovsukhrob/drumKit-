@@ -38,13 +38,43 @@ body {
   border-radius: 15px;
 }
 
-span {
-  font-size: 20px;
-  color: #fff;
+footer {
+  display: flex;
+  width: 150px;
+  margin: auto;
+  gap: 10px;
 }
 
-.love {
+footer a:nth-child(1) {
+  color: #000;
+}
+
+footer a:nth-child(2) {
   color: brown;
+}
+
+.icon1, .icon2, .icon3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  margin: auto;
+  border-radius: 50%;
+  font-size: 23px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.icon1:hover, .icon2:hover, .icon3:hover {
+  background-color: #b9bece;
+  transform: translateY(-12px);
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.7;
 }
 
 .w {
